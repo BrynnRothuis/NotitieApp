@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace NotitieApp
 {
-    public partial class Form1 : Form
+    public partial class Frm_NotitieApp : Form
     {
-        public Form1()
+        public Frm_NotitieApp()
         {
             InitializeComponent();
+        }
+
+        private void Frm_NotitieApp_Load(object sender, EventArgs e)
+        {
+            var to = new object[] { "one", "two" };
+            cmb_Employee.Items.AddRange(to);
+            cmb_Employee.SelectedIndex = 0;
         }
     }
 }
